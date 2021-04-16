@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #area{
+            background: rgb(104, 104, 211);
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id='area'>
+        olaaaa
+    </div>
+
+    <div>
+        <h1 id="soma">SOMANDO</h1>
+        <input type="number" name="" id="n1">
+        <input type="number" name="" id="n2">
+        <button onclick="somando()">SOMA</button>
+    </div>
+
+    <script>
+
+        function somando(){
+            let n1 = document.querySelector('input#n1')
+            let n2 = document.querySelector('input#n2')
+            
+            let nu1 = Number(n1.value)
+            let nu2 = Number(n2.value)
+            let soma = nu1+nu2
+            a.innerText = soma
+        } 
+
+
+        let a = document.getElementById('area')
+        a.addEventListener('click', clicou)
+        a.addEventListener('mouseover', entrou)
+        a.addEventListener('mouseout', saiu)
+
+        function clicou(){
+            a.innerText = "clicou"
+        }
+        function entrou(){
+            a.innerText = "entrou"
+        }
+        function saiu(){
+            a.innerText = "saiu"
+        }
+    </script>
+</body>
+</html>
