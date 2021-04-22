@@ -13,7 +13,11 @@ function contar(){
         let f = Number(fim.value)
         let p = Number(passo.value)
 
-        if (i <= f ){
+    if ( p <= 0){
+        alert('Passo 0 invalido! Considerando passo como 1.')
+        p = 1
+    }
+    if (i <= f ){
         for(let c = i;c <= f;c += p) {
             res.innerHTML += `${c} \u{1F449} `    
         }  
